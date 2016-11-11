@@ -1,0 +1,26 @@
+{
+	"name": "user_profile_type",
+	"user_token": "",
+	"profile_type": "AD",			
+
+	"PSASet": [
+		
+		{
+			"id": "strongswan",
+			"security_controls": [
+				
+				{
+					"imgName": "strongswan.img",
+					"conf_id":"strongswan_user8"
+				}
+				
+			] 
+			
+		}
+
+	], 
+	
+	"ingress_flow": ["strongswan"],
+	"egress_flow": ["strongswan"]
+
+}

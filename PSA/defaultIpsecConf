@@ -1,0 +1,13 @@
+# /etc/ipsec.conf - strongSwan IPsec configuration file
+config setup
+
+conn my_lan
+    left=%any
+    leftsubnet=192.168.2.0/24 #,10.2.0.0/16
+    rightsubnet=192.168.2.0/24 #,10.2.0.0/16
+    authby=never
+    type=passthrough
+    auto=route
+
+
+
